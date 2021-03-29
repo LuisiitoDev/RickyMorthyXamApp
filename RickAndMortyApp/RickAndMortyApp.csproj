@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="GraphQL.Client" Version="3.2.2" />
+    <PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="3.2.2" />
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.483" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="View\" />
+    <Folder Include="Model\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Services\RickAndMortyService\" />
+    <Folder Include="Services\GraphQL\" />
+    <Folder Include="Bootstrap\" />
+    <Folder Include="View\Character\" />
+    <Folder Include="ViewModel\Character\" />
+    <Folder Include="Services\HttpFactory\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+</Project>
